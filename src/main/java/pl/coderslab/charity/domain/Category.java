@@ -1,4 +1,4 @@
-package pl.coderslab.charity.entity;
+package pl.coderslab.charity.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,15 +6,13 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
-@Table(name="institutions")
+@Table(name="categories")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Institution {
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,10 +21,8 @@ public class Institution {
     @NotEmpty
     private String name;
 
-    private String description;
-
-    @Transient
-    @OneToMany(mappedBy = "institution")
-    private List<Donation> donations = new ArrayList<>();
+//    @Transient
+//    @ManyToMany(mappedBy = "categories")
+//    private List<Donation> donations = new ArrayList<>();
 
 }

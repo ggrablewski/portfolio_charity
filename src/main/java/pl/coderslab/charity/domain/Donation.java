@@ -1,4 +1,4 @@
-package pl.coderslab.charity.entity;
+package pl.coderslab.charity.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,7 +26,7 @@ public class Donation {
     private Integer quantity; // number of bags
 
     @NotEmpty
-    @ManyToMany(mappedBy = "donations")
+    @ManyToMany
     private List<Category> categories = new ArrayList<>();
 
     @NotNull
