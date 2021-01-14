@@ -16,10 +16,11 @@
     <description>Charity project, created with love in CodersLab</description>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.9</maven.compiler.source>
+        <maven.compiler.target>1.9</maven.compiler.target>
         <spring-framework.version>5.1.9.RELEASE</spring-framework.version>
         <java.version>1.8</java.version>
+        <springdoc.version>3.1.2</springdoc.version>
     </properties>
 
     <dependencies>
@@ -35,7 +36,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -62,6 +62,11 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>spring-boot-springdoc</artifactId>
+            <version>${springdoc.version}</version>
         </dependency>
     </dependencies>
 
