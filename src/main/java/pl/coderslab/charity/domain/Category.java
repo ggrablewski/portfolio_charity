@@ -20,9 +20,5 @@ public class Category {
 
     @NotEmpty
     private String name;
-
-//    @Transient
-//    @ManyToMany(mappedBy = "categories")
-//    private List<Donation> donations = new ArrayList<>();
-
+    
 }
